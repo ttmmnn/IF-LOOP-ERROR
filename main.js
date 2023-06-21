@@ -29,7 +29,26 @@ ok = '100';
 ok = {};
 ok = 'false';
 if (ok) {
-  console.log('OK!');
+  // console.log('OK!');
 } else {
   console.log('NO!');
 }
+ok = false && false;
+ok = false || true;
+ok = 'hello' && 'hi';
+ok = '' || 'hi';
+const userInput = '';
+const userName = userInput || 'User';
+const x = 15;
+ok = x > 10 && x < 20;
+ok = x === 10 || (x > 10 && userName);
+if (ok) {
+  // console.log('OK!');
+} else {
+  console.log('NO!');
+}
+ok = !true;
+ok = !'hello';
+ok = !x;
+ok = !!x;
+console.log(ok);
