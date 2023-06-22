@@ -51,4 +51,45 @@ ok = !true;
 ok = !'hello';
 ok = !x;
 ok = !!x;
-console.log(ok);
+// console.log(ok);
+
+const hello = 'hello2';
+{
+  const hello = 'hello1';
+}
+ok = false;
+ok = ok ? 'ok' : 'no';
+
+function vegetableColor(vegetable) {
+  switch (vegetable) {
+    case 'tomato': {
+      const message = 'tomato is red!';
+      console.log(message);
+      break;
+    }
+    case 'carrot':
+    case 'pumpkin': {
+      const message = `${vegetable} is orange!`;
+      console.log(message);
+      break;
+    }
+    case 'onion': {
+      const message = 'onion is white!';
+      console.log(message);
+      break;
+    }
+    default: {
+      //何も該当がない場合の条件はdefaultで作成する
+      const message = 'not found';
+      console.log(message);
+    }
+  }
+  // if (vegetable === 'tomato') {
+  //   console.log('tomato is red!');
+  // } else if (vegetable === 'pumpkin') {
+  //   console.log('pumpkin is orange!');
+  // } else if (vegetable === 'onion') {
+  //   console.log('onion is white!');
+  // }
+}
+vegetableColor('apple');
