@@ -116,11 +116,32 @@ const fruits = ['apple', 'banana', 'grape', 'orange', 'mango'];
 for (let i = 0; i < fruits.length; i += 1) {
   // console.log(fruits[i]);
 }
+for (const fruit of fruits) {
+  // console.log(fruit);
+}
 const coffee = {
   name: 'Cafe Latte',
   size: 350,
   isHot: true,
 };
-for (const fruit of fruits) {
-  console.log(fruit);
+for (const key in coffee) {
+  if (key === 'size') {
+    // console.log('continue!');
+    continue;
+  }
+  // console.log(key);
+  // console.log(coffee[key]);
 }
+
+try {
+  console.log('1');
+  console.log(chocolrate);
+} catch {
+  console.log('2');
+  try {
+    onsole.log(chocolrate);
+  } catch {
+    console.log('3');
+  }
+}
+console.log('4');
