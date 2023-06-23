@@ -92,4 +92,35 @@ function vegetableColor(vegetable) {
   //   console.log('onion is white!');
   // }
 }
-vegetableColor('apple');
+// vegetableColor('tomato');
+let count = 100;
+while (count < 10) {
+  console.log('while: ', count);
+  count += 1;
+}
+let tomatoCount = 100;
+do {
+  // console.log('do-while: ', tomatoCount);
+  tomatoCount += 1;
+} while (tomatoCount < 10);
+
+for (
+  let pumpkinCount = 0, i = 0;
+  pumpkinCount < 10;
+  pumpkinCount += 1, i += 1
+) {
+  // console.log(pumpkinCount, i);
+}
+
+const fruits = ['apple', 'banana', 'grape', 'orange', 'mango'];
+for (let i = 0; i < fruits.length; i += 1) {
+  // console.log(fruits[i]);
+}
+const coffee = {
+  name: 'Cafe Latte',
+  size: 350,
+  isHot: true,
+};
+for (const fruit of fruits) {
+  console.log(fruit);
+}
