@@ -133,15 +133,15 @@ for (const key in coffee) {
   // console.log(coffee[key]);
 }
 
-try {
-  console.log('1');
-  console.log(chocolrate);
-} catch {
-  console.log('2');
+function logChocolate() {
   try {
-    onsole.log(chocolrate);
-  } catch {
-    console.log('3');
+    console.log('try');
+    console.log(chocolrate);
+  } catch (error) {
+    console.log('catch', error);
+  } finally {
+    console.log('finally');
+    return 'hello';
   }
 }
-console.log('4');
+logChocolate();
